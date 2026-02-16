@@ -1,4 +1,4 @@
-# Survivor Kanban: Tactical Rescue 🧟‍♂️📦
+# Survivor Kanban: Tactical Rescue
 
 **Survivor Kanban** es un juego de estrategia y gestión de crisis desarrollado en **Dart y Flutter**. La aplicación utiliza la metáfora de un tablero Kanban para simular un entorno de supervivencia donde el jugador debe gestionar recursos y riesgos en tiempo real mediante mecánicas de arrastrar y soltar.
 
@@ -21,7 +21,6 @@ El proyecto está organizado siguiendo las mejores prácticas de Flutter, separa
     * `game_page.dart`: Núcleo del juego con el tablero dinámico.
     * `summary_page.dart`: Pantalla de estadísticas finales.
 * `lib/widgets/`: Componentes reutilizables como la lógica de las columnas (`BoardColumn`) y las tarjetas interactivas (`SurvivorCard`).
-* `lib/core/`: Estilos, colores y constantes globales.
 * `screenshots/`: Imágenes demostrativas del funcionamiento de la app.
 * `main.dart`: Punto de entrada y configuración de rutas.
 
