@@ -142,9 +142,7 @@ class _GamePageState extends State<GamePage> {
       // 2. Lógica de Recursos (Consumibles)
       if (card.type == CardType.resource) {
         if (targetList == shelterCards) {
-          // 🔥 PUNTOS: Gran recompensa por asegurar suministros
           score += 50;
-
           // Si sueltas recurso en refugio -> Cura a todos los vivos
           for (var survivor in shelterCards) {
             if (survivor.health > 0) {
@@ -160,15 +158,11 @@ class _GamePageState extends State<GamePage> {
       // 3. Lógica de Combate (Sobreviviente ataca Amenaza)
       if (card.type == CardType.survivor && targetList == dangerCards) {
         if (dangerCards.isNotEmpty) {
-          // 🔥 PUNTOS: La mayor recompensa es por valentía
           score += 100;
-
           // Elimina la amenaza más antigua
           dangerCards.removeAt(0);
-
           // El sobreviviente recibe daño por pelear
           card.health = (card.health - 0.25).clamp(0.0, 1.0);
-
           // El sobreviviente regresa al refugio "herido" automáticamente
           _removeCardFromAll(card);
           shelterCards.add(card);
@@ -208,7 +202,7 @@ class _GamePageState extends State<GamePage> {
           ),
         ),
         centerTitle: true,
-        backgroundColor: Colors.black.withOpacity(0.5), // Transparente
+        backgroundColor: Colors.black.withValues(alpha: 0.5), // Transparente
         elevation: 0,
         actions: [
           // HUD Mejorado
@@ -225,8 +219,8 @@ class _GamePageState extends State<GamePage> {
               boxShadow: [
                 BoxShadow(
                   color: gameStarted
-                      ? Colors.greenAccent.withOpacity(0.2)
-                      : Colors.orangeAccent.withOpacity(0.2),
+                      ? Colors.greenAccent.withValues(alpha: 0.2)
+                      : Colors.orangeAccent.withValues(alpha: 0.2),
                   blurRadius: 8,
                   spreadRadius: 1,
                 ),
