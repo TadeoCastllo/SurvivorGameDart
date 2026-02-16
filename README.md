@@ -6,8 +6,8 @@
 
 | Menú Principal | Gameplay (Vertical) | Gameplay (Horizontal) | Game Over |
 |:---:|:---:|:---:|:---:|
-| <img src="screenshots/menu.jpeg" width="200"> | <img src="screenshots/gameplay_v.jpeg" width="200"> | <img src="screenshots/gameplay_h.jpeg" width="300"> | <img src="screenshots/gameover.jpeg" width="300"> |
-| *Inicio de la misión* | *Vista táctica móvil* | *Vista de tablero completo* | *Fin de la misión* |
+| <img src="screenshots/menu.jpeg" width="200"> | <img src="screenshots/gameplay_v.jpeg" width="200"> | <img src="screenshots/gameplay_h.jpeg" width="300"> | <img src="screenshots/gameover.jpeg" width="200"> |
+| *Inicio de la misión* | *Vista táctica móvil* | *Vista de tablero completo* | *Fin de la partida* |
 
 > *Nota: Las imágenes muestran la adaptación de la interfaz mediante `OrientationBuilder`.*
 
