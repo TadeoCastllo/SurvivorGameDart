@@ -4,10 +4,10 @@
 
 ## 📸 Capturas de Pantalla
 
-| Menú Principal | Gameplay (Vertical) | Gameplay (Horizontal) |
-|:---:|:---:|:---:|
+| Menú Principal | Gameplay (Vertical) | Gameplay (Horizontal) | Game Over |
+|:---:|:---:|:---:|:---:|
 | <img src="screenshots/menu.jpeg" width="200"> | <img src="screenshots/gameplay_v.jpeg" width="200"> | <img src="screenshots/gameplay_h.jpeg" width="300"> | <img src="screenshots/gameover.jpeg" width="300"> |
-| *Inicio de la misión* | *Vista táctica móvil* | *Vista de tablero completo* |
+| *Inicio de la misión* | *Vista táctica móvil* | *Vista de tablero completo* | *Fin de la misión* |
 
 > *Nota: Las imágenes muestran la adaptación de la interfaz mediante `OrientationBuilder`.*
 
@@ -29,7 +29,7 @@ El proyecto está organizado siguiendo las mejores prácticas de Flutter, separa
 
 Para cumplir con los requisitos técnicos de la asignatura, se implementaron:
 
-* **Interacción Táctica:** Uso de `Draggable` y `DragTarget` para la mecánica central de movimiento de cartas. Se optó por `LongPressDraggable` para mejorar la precisión y evitar movimientos accidentales en móviles.
+* **Interacción Táctica:** Uso de `Draggable` y `DragTarget` para la mecánica central de movimiento de cartas.
 * **Diseño Responsivo:** Implementación de **`OrientationBuilder`** que adapta la interfaz en tiempo real:
     * **Modo Vertical:** Las columnas se organizan en un `Column` para facilitar el acceso rápido.
     * **Modo Horizontal:** Se utiliza un `Row` expandido para una visión panorámica táctica.
